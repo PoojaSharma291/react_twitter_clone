@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Feed.css";
 import TweetBox from './TweetBox';
+import FlareOutlinedIcon from '@material-ui/icons/FlareOutlined';
 import Post from './Post';
 
 function Feed() {
@@ -8,18 +9,21 @@ function Feed() {
         <div className="feed">
             {/*Header */}
             <div className="feed__header">
-                <h2>Home</h2>
+                <span className="feed__headerContainer">
+                    <h2>Home</h2>
+                    <span className="feed__modeIcon"><FlareOutlinedIcon font-size="small" /></span>
+                </span>
             </div>
             {/* Tweetbox */}
             <TweetBox />
             {/* Post */}
             <Post />
             {/* Post */}
-
+            <Post />
             {/* Post */}
-
+            <Post />
             {/* Post */}
-
+            <Post />
             {/* Post */}
 
             {/* Post */}
