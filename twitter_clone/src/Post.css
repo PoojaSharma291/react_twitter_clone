@@ -1,5 +1,4 @@
 .post {
-  /* color: var(--twitter-color) !important; */
   display: flex;
   align-items: flex-start;
   border-bottom: 1px solid var(--twitter-background);

@@ -26,16 +26,15 @@ function Post(props) {
                         </h3>
                     </div>
                     <div className="post__headerDescription">
-                        <p>This is not original twitter !! Beware !!</p>
+                        <p>This is not original twitter !! <strong>****** Beware !! *****</strong></p>
                     </div>
                 </div>
                 <img className="post__image" src="https://media1.tenor.com/images/73dda3a7a549f12b2c43412b1246e37b/tenor.gif?itemid=10994492" alt="" />
                 <div className="post__footer">
-                    <ChatBubbleOutlineIcon >
-                    </ChatBubbleOutlineIcon>
-                    <RepeatIcon></RepeatIcon>
-                    <FavoriteBorderIcon></FavoriteBorderIcon>
-                    <PublishIcon></PublishIcon>
+                    <ChatBubbleOutlineIcon fontSize="small"/>
+                    <RepeatIcon  fontSize="small"/>
+                    <FavoriteBorderIcon  fontSize="small"/>
+                    <PublishIcon  fontSize="small"/>
                 </div>
             </div>
 
