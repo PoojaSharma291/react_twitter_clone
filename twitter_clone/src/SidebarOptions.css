@@ -1,6 +1,5 @@
 .sidebarOption {
   display: flex;
-  /* color: rgba(29, 161, 242, 1); */
   align-items: center;
   cursor: pointer;
 }
@@ -17,4 +16,7 @@
   font-weight: 800;
   font-size: 20px;
   margin-right: 20px;
+}
+.sidebarOption--active{
+  color: var(--twitter-color);
 }

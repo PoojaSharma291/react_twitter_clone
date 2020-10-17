@@ -1,6 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import {Button} from '@material-ui/core';
 import SidebarOptions from './SidebarOptions';
 /* Material UI Icons */
 import HomeIcon from '@material-ui/icons/Home';
@@ -16,7 +17,7 @@ function Sidebar() {
     return (
         <div className="sidebar">
             {/* Twitter Icon */}
-            <TwitterIcon className = "setColor"/>
+            <TwitterIcon className = "sidebar__twitterIcon"/>
             {/* SidebarOptions */}
             <SidebarOptions active Icon={HomeIcon} text="Home" />
             {/* SidebarOptions */}
@@ -34,7 +35,7 @@ function Sidebar() {
             {/* SidebarOptions */}
             <SidebarOptions Icon={RemoveCircleIcon} text="More" />
             {/* Button Tweet */}
-
+            <Button variant="outlined" className="sidebar__tweet" fullWidth>Tweet</Button>
 
         </div>
     )
