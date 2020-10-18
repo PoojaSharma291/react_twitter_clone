@@ -12,24 +12,24 @@ function Post(props) {
     return (
         <div className="post">
             <div className="post__avatar">
-                <Avatar src="assets/images/usTravelBugs.jpg"></Avatar>
+                <Avatar src={props.avatar}></Avatar>
             </div>
             <div className="post__body">
                 <div className="post__header">
                     <div className="post__headerText">
                         <h3>
-                            Pooja Sharma Gogia {" "}
+                            {props.displayName} {" "}
                             <span className="post__headerSpecial">
-                                <VerifiedUserIcon className="post__badge"></VerifiedUserIcon>
+                              {props.verified && <VerifiedUserIcon className="post__badge"></VerifiedUserIcon> }  
                             </span>
-                            <span className="post__headerSpecial">@psgogia</span>
+                            <span className="post__headerSpecial">{props.username}</span>
                         </h3>
                     </div>
                     <div className="post__headerDescription">
-                        <p>This is not original twitter !! <strong>****** Beware !! *****</strong></p>
+                        <p>{props.text}</p>
                     </div>
                 </div>
-                <img className="post__image" src="https://media1.tenor.com/images/73dda3a7a549f12b2c43412b1246e37b/tenor.gif?itemid=10994492" alt="" />
+                <img className="post__image" src={props.image} alt="" />
                 <div className="post__footer">
                     <ChatBubbleOutlineIcon fontSize="small"/>
                     <RepeatIcon  fontSize="small"/>
